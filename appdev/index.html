@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+    <head>
+    <link rel ="stylesheet" href ="style.css">
+    </head>
+    <body >
+        <div id = "main_container" >
+            <scan id = "instruction_txt">Press SPACE to stop the needle</scan>
+            <br>
+            <scan id = "degree_txt">Degree stopped at: 0°</scan>
+            <br>
+            <br>
+            <div id = "scorebar_container">
+                <img src="img/scorebar.png" id = "scorebar_img" alt="score bar did not load">
+                <scan id = "score">00</scan>
+                <img src = "img/arrow.png" id = "arrow" alt = "arrow did not load">
+                <img src = "img/hammer.png" id = "hammer"alt = "hammer did not load">
+                <span id = "dot"></span>
+            </div>
+            <br>
+            <button id = "restart">Restart</button><br>
+            <scan id = "restart_txt">
+                Click the button to restart or press enter
+            </scan>
+        </div>
+    <script src = "backend.js"></script>
+    </body>
+</html>

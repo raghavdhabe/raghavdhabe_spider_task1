@@ -1,0 +1,90 @@
+#main_container {
+    margin-top: 100px;
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
+#instruction_txt{
+    color: blueviolet;
+}
+body {
+  background-size: auto;
+  background: url(img/bgimg.jpg);
+  background-repeat: no-repeat;
+}
+
+#scorebar_container{
+    display:inline-block; /*makes score container behave as inline content, and text-align:center centers all inline elements */
+
+    position:relative;
+}
+
+#scorebar_img{
+    display:block; /*extra whitespace on bottom is not there*/
+    width:50%;
+    height:50%;
+    margin:auto;
+
+}
+
+#score{
+    position:absolute;
+    left:50%;
+    top:16.5%;
+    font-weight:bold;
+    font-size:larger;
+    transform: translate(-50%,-50%)
+}
+
+#arrow{
+    position:absolute;
+    left:50%;
+    top:84.5%;
+    transform-origin: 0% 50%; /*transform origin is left center */
+    animation: swingArrow 2s infinite;
+    
+}
+
+@keyframes swingArrow {
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-180deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(0deg);}
+    100% {transform: rotate(-180deg);}
+}
+
+#hammer{
+    position: absolute;
+    left: 45.5%;
+    top:78.5%;
+    transform-origin: right center;
+    transform: rotate(90deg);
+
+}
+
+#degree_txt{
+    color: blueviolet;
+}
+#dot{
+    position:absolute;
+    height:7px;
+    width:7px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 370px;
+}
+/*276 pixels difference*/
+
+#restart{
+    color:black;
+    display:inline-block;
+    padding:20px;
+    margin:20px;
+    border-radius: 15px;
+    background-color: blueviolet;
+}
+#restart_txt{
+    color:white;
+}
